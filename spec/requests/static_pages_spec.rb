@@ -7,11 +7,6 @@ describe "Static pages" do
       visit '/static_pages/home'
       expect(page).to have_content('Blues Bass Community')
     end
-
-    it "should have the right title" do
-      visit '/static_pages/home'
-      expect(page).to have_title("Blues Bass Community | Home")
-    end
   end
 
   describe "Help page" do
